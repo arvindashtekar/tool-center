@@ -4,7 +4,7 @@
   "tool": {
     "name": "Celmis",
     "publisher": "Celmis Labs",
-    "description": "Self-hosted code intelligence that indexes repositories into a symbol graph and audits their dependencies deterministically — each ecosystem's native auditor, with lock files and OSV.dev elsewhere. Exports a CycloneDX 1.5 SBOM with package URLs, plus an evidence pack whose manifest of sha256 digests lets a third party verify it without trusting the machine that produced it. Reports the ecosystems it could not fully resolve alongside the findings.",
+    "description": "Self-hosted code intelligence that indexes repositories into a symbol graph and audits their dependencies deterministically — each ecosystem's native auditor, with lock files and OSV.dev elsewhere. Exports a CycloneDX 1.5 SBOM with package URLs, plus an evidence pack whose manifest of sha256 digests a third party can recompute offline with a dependency-free verifier. Those digests prove the archive is internally consistent; the manifest carries no digest of itself, so the export returns the manifest's own sha256 in a header to be published separately, and only that makes the check independent of the machine that produced the pack. Reports the ecosystems it could not fully resolve alongside the findings.",
     "repository_url": "https://github.com/Celmis-labs/Celmis",
     "website_url": "https://celmis-labs.github.io",
     "capabilities": [
@@ -16,7 +16,7 @@
     ],
     "functions": [
       "ANALYSIS",
-      "AUTHOR"
+      "PACKAGE_MANAGER_INTEGRATION"
     ],
     "analysis": [
       "SECURITY_VULNERABILITIES",
@@ -43,11 +43,11 @@
       "CYCLONEDX_V1.5"
     ],
     "supportedLanguages": [
-      "PYTHON",
+      "GO",
       "JAVASCRIPT/TYPESCRIPT",
-      "JAVA",
-      ".NET",
       "PHP",
+      "PYTHON",
+      "RUBY",
       "RUST"
     ]
   }
