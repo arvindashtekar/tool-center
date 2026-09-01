@@ -1,7 +1,7 @@
 {
   "$schema": "https://cyclonedx.org/schema/tool-center-v2.schema.json",
   "specVersion": "2.0",
-  "last_updated": "2026-08-26T09:52:08Z",
+  "last_updated": "2026-09-01T08:14:38Z",
   "license": {
     "id": "CC-BY-SA-4.0",
     "name": "Creative Commons Attribution-ShareAlike 4.0 International",
@@ -2173,6 +2173,59 @@
         "RUST"
       ],
       "_fromFile": "cdxgen.json"
+    },
+    {
+      "name": "Celmis",
+      "publisher": "Celmis Labs",
+      "description": "Self-hosted code intelligence. Indexes repositories into a symbol graph and audits dependencies deterministically \u2014 each ecosystem's native auditor, OSV-Scanner for the rest. Exports a CycloneDX 1.5 SBOM and an evidence pack of sha256 digests.",
+      "repository_url": "https://github.com/Celmis-labs/Celmis",
+      "website_url": "https://celmis-labs.github.io",
+      "capabilities": [
+        "SBOM"
+      ],
+      "availability": [
+        "OPEN_SOURCE",
+        "OSI_APPROVED"
+      ],
+      "functions": [
+        "ANALYSIS",
+        "PACKAGE_MANAGER_INTEGRATION"
+      ],
+      "analysis": [
+        "SECURITY_VULNERABILITIES",
+        "OUTDATED_COMPONENTS",
+        "RESOURCE_REPORTING"
+      ],
+      "packaging": [
+        "CONTAINER_IMAGE",
+        "APPLICATION"
+      ],
+      "platform": [
+        "LINUX",
+        "MAC",
+        "WINDOWS"
+      ],
+      "lifecycle": [
+        "PRE-BUILD"
+      ],
+      "supportedStandards": [
+        "CYCLONEDX",
+        "PACKAGE_URL"
+      ],
+      "cycloneDxVersion": [
+        "CYCLONEDX_V1.5"
+      ],
+      "supportedLanguages": [
+        ".NET",
+        "GO",
+        "JAVA",
+        "JAVASCRIPT/TYPESCRIPT",
+        "PHP",
+        "PYTHON",
+        "RUBY",
+        "RUST"
+      ],
+      "_fromFile": "celmis.json"
     },
     {
       "name": "Chainloop",
